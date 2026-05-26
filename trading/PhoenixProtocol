@@ -1,0 +1,13 @@
+# A notebook tetejére:
+import sys
+import os
+sys.path.append(os.getcwd())
+
+# Importáld a modulokat a mappákból:
+from core.phoenix_protocol import PhoenixProtocol
+from security.encryption_hammer import strike_encryption_hammer
+from network.shadow_router import engage_shadow_routing
+
+# Ezután a notebookban már használhatod is ezeket a funkciókat:
+p = PhoenixProtocol()
+p.boot_sequence()
