@@ -2,8 +2,19 @@
 # Hozzáadjuk a repó gyökerét az elérési útvonalhoz
 import sys
 import os
-# Ez a sor beállítja az elérési utat a fájl helyéhez képest (a gyökérhez)
-sys.path.append(os.getcwd())
+
+# Megkeressük a fájlunk (tracker.py) helyét
+current_dir = os.path.dirname(os.path.abspath(__file__))
+# Hozzáadjuk a gyökeret a path-hoz
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+
+import streamlit as st
+import pandas as pd
+
+# Most már importálhatod a saját moduljaidat, mert a gyökér a path-ban van
+from core.phoenix_protocol import PhoenixProtocol
+from trading.gold_extractor import process_gold_signals
 
 import streamlit as st
 import pandas as pd
