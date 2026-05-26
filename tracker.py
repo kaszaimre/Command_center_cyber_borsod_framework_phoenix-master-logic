@@ -1,7 +1,9 @@
+
+# Hozzáadjuk a repó gyökerét az elérési útvonalhoz
 import sys
 import os
-# Hozzáadjuk a repó gyökerét az elérési útvonalhoz
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Ez a sor beállítja az elérési utat a fájl helyéhez képest (a gyökérhez)
+sys.path.append(os.getcwd())
 
 import streamlit as st
 import pandas as pd
