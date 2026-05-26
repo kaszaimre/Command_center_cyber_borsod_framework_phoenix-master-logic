@@ -7,8 +7,16 @@ sys.path.append(os.getcwd())
 
 import streamlit as st
 import pandas as pd
-from core.phoenix_protocol import PhoenixProtocol
-from trading.gold_extractor import process_gold_signals
+# Helyette használd ezeket az importokat:
+try:
+    from core.phoenix_protocol import PhoenixProtocol
+    from trading.gold_extractor import process_gold_signals
+except ImportError:
+    # Ha ez sem találja, akkor a gyökérkönyvtárat adjuk hozzá
+    import sys
+    sys.path.append('.')
+    from core.phoenix_protocol import PhoenixProtocol
+    from trading.gold_extractor import process_gold_signals
 # Itt hívod be a többi modulodat is!
 
 st.set_page_config(page_title="Borsodi Bunker Terminal", layout="wide")
