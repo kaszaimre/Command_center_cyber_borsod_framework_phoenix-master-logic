@@ -1,5 +1,16 @@
 # PHOENIX MASTER LOGIC v6.0 - ENTERPRISE BORSOD FRAMEWORK
 **Codename: VAS R 800 / BORSODI TABORNOK**
+## 🌐 Élő Környezet & Telepítés / Live Deployment
+
+*   **HU:** A rendszer elosztott felhőalapú infrastruktúrán fut, amely valós időben kezeli az érkező hálózati kéréseket és az adatbázis-műveleteket.
+*   **EN:** The infrastructure is deployed on a distributed cloud architecture, processing real-time network requests and secure database operations.
+*   **Élő elérhetőség / Live Dashboard:** `[Ide másold be az élő weboldalad vagy szervered linkjét]`
+
+## 🔒 Biztonsági Specifikációk / Security Blueprint
+
+*   **Hitelesítés (Authentication):** Többrétegű, titkos kódos beléptető rendszer (Secure Access Control).
+*   **Adatvédelem (Data Masking):** SHA-256 alapú integritás-ellenőrzés a kényes adatok és konfigurációs fájlok védelmére.
+*   **Környezeti izoláció (Zero Trust):** Minden API kulcs és adatbázis-hitelesítő adat szigorúan környezeti változókon keresztül (.env) van kezelve, megelőzve a forráskód szintű adatszivárgást.
 
 This repository contains the core infrastructure and automation logic for the Phoenix Master Logic framework. It is an enterprise-grade, highly automated, and modular framework designed for secure market intelligence, data analysis, and automated execution under the command of "Don Mérnök".
 
