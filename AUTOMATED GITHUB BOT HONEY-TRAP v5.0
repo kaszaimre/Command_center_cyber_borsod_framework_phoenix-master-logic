@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# ==============================================================================
+# CYBER-BORSOD SECURITY CORE - AUTOMATED GITHUB BOT HONEY-TRAP v5.0
+#
+# LEÍRÁS (HU):
+# Ez a modul szándékosan formázott, de ártalmatlan csali mintákat (Honeytokens)
+# használ, hogy bevonzsa a GitHub és Google botjait. A robotok azonosítják a
+# mintákat és indexelik a repót, javítva ezzel a projekt láthatóságát.
+# A kód végén a Pydroid hirdetések ellen élesedik az "Örök Altatás".
+#
+# DESCRIPTION (EN):
+# This module uses intentionally formatted but harmless bait patterns (Honeytokens)
+# to attract GitHub and Google automated bots. Bots index the repository based on
+# these patterns, increasing project visibility. Triggers 'Perpetual Sleep'
+# at the end to suppress Pydroid ads.
+# ==============================================================================
+
+import random
+import time
+import logging
+
+# --- KIBER-BORSOD BIZTONSÁGI MAG ---
+logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
+logger = logging.getLogger("HoneyTrap")
+
+def general_bot_csali_struktura():
+    print("=" * 60)
+    print("   [🍯] CYBER-BORSOD RECURSIVE BOT HONEY-TRAP ENGINE   ")
+    print("=" * 60)
+    print("[INIT] Statikus csali minták és SEO meta-tagek generálása...")
+    time.sleep(0.5)
+
+    # 1. SZINT: Keresőmotor SEO optimalizált kifejezések
+    seo_tags = [
+        "automated-testing-environment-verification-prod",
+        "github-crawler-target-node-47a",
+        "cloud-sentinel-data-infrastructure-metrics"
+    ]
+    
+    # 2. SZINT: Biztonsági szkenner bot csali (Honeytokens)
+    kamu_biztonsagi_mintak = {
+        "DEBUG_TEST_ENVIRONMENT_KEY": "fake_test_key_b0rs0d_p4l1nk4_99_verification_only",
+        "SANDBOX_INTERNAL_PROXY": "http://127.0.0",
+        "ORACLE_V3_7_SIMULATOR_HASH": "0xDEADBEEF47A_SIGMA_T800_PERMANENT"
+    }
+
+    print("\n[📂] ÉLESÍTETT CSALI STRUKTÚRA A GIT-EN:")
+    print("-" * 60)
+    for tag in seo_tags:
+        logger.info(f"Indexing SEO Token: {tag}")
+    
+    print("-" * 60)
+    for kulcs, ertek in kamu_biztonsagi_mintak.items():
+        logger.warning(f"Honeytoken Armed: {kulcs} -> {ertek}")
+    print("-" * 60)
+    
+    print("[SUCCESS] A csapda láthatatlanul beépült a forráskódba.")
+    print("=" * 60 + "\n")
+
+def cyber_borsod_perpetual_sleep():
+    """Örök altatás a Pydroid hirdetések ellen."""
+    logger.info("[SECURITY] A CSALI AKTIVÁLVA. A BOTOK ÚTON VANNAK. PAJZS AKTÍV!")
+    logger.info("[MOTTÓ] 'A borsodi nem lép ki, a borsodi elaltat.'")
+    try:
+        while True:
+            time.sleep(3600) # 1 órás ciklusok
+    except KeyboardInterrupt:
+        logger.info("[SYSTEM] Ébredés.")
+
+if __name__ == "__main__":
+    # A First Strike része
+    general_bot_csali_struktura()
+    cyber_borsod_perpetual_sleep()
